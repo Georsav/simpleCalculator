@@ -24,7 +24,7 @@ container.dataset.calcEnd = "N";
 
 numBtns.forEach(button => {
     button.addEventListener('click', () => {
-        if (container.dataset.calcEnd = "Y") {
+        if (container.dataset.calcEnd == "Y") {
             scr.textContent = 0;
             container.dataset.calcEnd = "N";
         }
