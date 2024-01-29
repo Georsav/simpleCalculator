@@ -20,14 +20,17 @@ container.dataset.operation = '';
 container.dataset.firstValue = "";
 container.dataset.secondValue = "";
 container.dataset.midValue = "";
-container.dataset.calcEnd = "";
+container.dataset.calcEnd = "N";
 
 numBtns.forEach(button => {
     button.addEventListener('click', () => {
-        if (scr.textContent == 0 || container.dataset.calcEnd == "Y") {
+        if (container.dataset.calcEnd = "Y") {
+            scr.textContent = 0;
+            container.dataset.calcEnd = "N";
+        }
+        if (scr.textContent == 0) {
             if (button.value == ".") {
                 scr.textContent = scr.textContent + ".";
-                container.dataset.calcEnd = "";
             } else {
                 scr.textContent = button.value;
             }
